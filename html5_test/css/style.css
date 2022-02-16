@@ -34,3 +34,6 @@ h1.title {
 }
 #header > ul > li.a { color: blue;
 }
+#body >nav>ul>li.a
+h1:hover{color: red;
+}
