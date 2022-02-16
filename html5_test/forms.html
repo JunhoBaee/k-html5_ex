@@ -17,7 +17,8 @@
 
     <label for = "file" name = " " id = " ">파일선택</label>
     <input type = "file" name="file" id="file"> <br>
-        
+    </div>
+
     <h2>성별선택</h2>
     <input type="radio" name="gender" id="woman">
     <label for="woman">여성</label>
@@ -26,22 +27,69 @@
     <input type="radio" name="gender" id="etc">
     <label for="etc">기타</label>
 
+    <div>
     <h2>연령대 선택</h2>
-    <input type="radio" name="20대" id="20대">
     <label for="20대">20대</label>
-    <input type="radio" name="30대" id="30대">
+    <input type="radio" name="20대" id="20대">
     <label for="30대">30대</label>
-    <input type="radio" name="40대" id="40대">
+    <input type="radio" name="30대" id="30대">
     <label for="40대">40대</label>
-    <input type="radio" name="50대" id="50대">
+    <input type="radio" name="40대" id="40대">
     <label for="50대">50대</label>
-    <input type="radio" name="60대" id="60대">
-    <label for="60대">60대</label> <br>
+    <input type="radio" name="50대" id="50대">
+    <label for="60대">60대</label>
+    <input type="radio" name="60대" id="60대"><br>    
+    </div>
 
     <label for ="주소입력" >주소입력</label>
-    <input type="text" name = "주소 입력" id = "주소입력" style="width: 400px;"> <br>
+    <input type="text" name = "주소 입력" id = "주소입력" style="width: 400px;"> <br> 
     
-    
-    </div>
+    <hr>
+    <input type = "checkbox" name = "checkbox" value="checkbox">
+    <label for = "checkbox" id = "Java">Java</label>
+    <input type = "checkbox" name = "checkbox" value="checkbox">
+    <label for = "checkbox" id = "Python">Python</label>
+    <input type = "checkbox" name = "checkbox" value="checkbox">
+    <label for = "checkbox" id="C">C</label>
+
+    <h2>좋아하는 음식은?</h2>
+    <label for="food">음식&nbsp;</label>
+    <select name="food" id="food">
+    <option value="">김밥</option>
+    <option value="">떡볶이</option>
+    <option value="">치킨</option>
+    <option value="">어묵</option>
+    </select>
+
+    <h2>프로그래밍 언어</h2>
+    <select>
+        <optgroup label="HTML5">
+            <option>Multimedia</option>
+            <option>Connectivity</option>
+            <option>Device Access</option>
+        </optgroup>
+        <optgroup label="HTML5">
+            <option>Multimedia</option>
+            <option>Connectivity</option>
+            <option>Device Access</option>
+    </select>
+
+    <h2>좋아하는 명언 남김</h2>
+    <h4>올바른 형태</h4>
+    <textarea  style="width: 400px; height: 100px;">Textarea 태그 Textarea 태그
+    </textarea>
+    <h4>잘못된 형태</h4>
+    <textarea>
+    Textarea 태그      
+    Textarea 태그
+    </textarea>
+
+    <!-- 버튼 -->
+    <input type="button" value="button" />
+    <input type="reset" value="reset" />
+    <input type="submit" value="submit" /> <br />
+    <input type="image" src="http://placehold.it/100x50" />
+
+
 </body>
 </html>
