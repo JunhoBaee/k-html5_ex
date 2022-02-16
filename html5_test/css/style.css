@@ -1,17 +1,36 @@
-body, h1, h2{
-    margin: 10px;
-    padding: 20px;
+body, h1, h2 {
+    margin: 0px; 
+    padding: 0px; 
 }
 
 h1 {
     background-color: rgb(22, 187, 50);
-    font-size: 25pt;
+    font-size: 40px;
 }
-h2{
-    color: aqua;
+h2 {
+    color:darkgreen;
+}
+li {
+    color:rgb(92, 11, 168);
+    font-weight: bold;
+} 
+li.private {
+    background-color: aqua;
 }
 
-li{
-    color:black;
-    font-weight: bold;
+li.service {
+    background-color: rgb(222, 233, 73);
+}
+li.aaa {
+    background-color: cornflowerblue;
+}
+li#bigdata{
+ color: red;   
+ font-size: 20px;
+}
+h1.title {
+    background-color: white;
+    color: red;
+}
+#header > ul > li.a { color: blue;
 }
