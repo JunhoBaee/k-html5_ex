@@ -1,0 +1,52 @@
+article{
+    border: 1px solid red;
+}
+ul li{
+    border: 1px solid blue;
+}
+/* CSS초기화 *을 통해 모두 선택 */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ul, ol {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.wrap{
+    width: 800px;
+    margin: 100px auto;
+    border: 5px solid black;
+}
+.wrap .left{
+    width: 400px;
+    height: 400px;
+    background-color: pink;
+    float: left;
+}
+.wrap .right{
+    width: 400px;
+    height: 400px;
+    background-color: lightblue;
+    float: left;
+}
+.wrap::after{
+    content: ' ';
+    display: block;
+    clear: both;
+}
+section{
+    width: 600px;
+    height: 200px;
+}
+section:nth-of-type(1) {
+    background-color: pink;
+}
+section:nth-of-type(2) {
+    background-color: lightblue;
+    position: relative;
+    top: -100px;
+    left: 100px;
+}
