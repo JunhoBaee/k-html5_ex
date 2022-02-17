@@ -1,0 +1,25 @@
+/* 교재 CSS 실습 */
+/* *{
+    border: 1px
+    solid rgb(4, 0, 255);
+} */
+h1{
+    width: 400px;
+    border-top: 2px solid red;
+}
+p{
+    width: 400px;
+    border-bottom: 4px dotted blue;
+}
+a{
+    border: 4px outset purple;
+}
+.box1{
+    /* border-bottom:2px double rgb(27, 184, 22) */
+    border-bottom: 2px;
+    border-bottom-style: solid ;
+    border-bottom-color: rgb(27, 184, 22);
+    margin-top: 20px;
+    width: 800px;
+}
+ul > li 

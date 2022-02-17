@@ -1,7 +1,17 @@
-h1, h2, p{
+h1{
     background-color: aquamarine;
+    margin: 10;
+    padding: 15;
 }
 
 h1{
     font-size: 35px;
+    text-combine-upright: 50;
+}
+
+section > ul > ol {
+    font-style: italic;
+}
+section > ul > li {
+    font-size: 35;
 }
