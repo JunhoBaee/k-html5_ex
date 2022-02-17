@@ -1,0 +1,92 @@
+body{
+    width: 1000px;
+    margin: 0 auto;
+}
+h1, h2 {
+    margin: 0px; 
+    padding: 0px; 
+}
+​
+h1 {
+    background-color: rgb(22, 187, 50);
+    font-size: 40px;
+}
+header {
+    /* height : 50px; */
+    width: 100px;
+}
+/* li 요소의 block요소를 inline-block 요소로 변경 한줄로 나열*/
+/* header li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 20px;
+           /* (top, bottom) (left, right) */
+    /* padding: 10px 20px; */
+           /* top 부터 시계방향으로 적용 */
+    /* padding: 10px 20px 30px 40px; */
+/* } */ 
+/* li에 float 적용해서 한줄로 나열 */
+header li {
+    list-style-type: none;
+    float:left;
+    /* padding: 10px; */
+    width: 100px;
+    text-align: center;
+}
+header li a{
+    color:rgb(224, 80, 13);
+    /* font-weight: bold; */
+    text-decoration: none;
+    line-height: 50px;
+} 
+header nav ul::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+header li:hover {
+    background-color: aquamarine;
+    font-size: 1.2em;
+}
+header li:active {
+    font-style: italic;
+}
+h2 {
+    color:darkgreen;
+}
+li.private {
+    background-color: aqua;
+}
+​
+li.service {
+    background-color: rgb(222, 233, 73);
+}
+li.aaa {
+    background-color: cornflowerblue;
+}
+li#bigdata{
+ color: red;   
+ font-size: 20px;
+}
+​
+section .ccc {
+    color: black;
+    font-size: 30px;
+}
+h1.title { 
+    background-color: white;
+    color: red;
+}
+div#header h2.sub_title {
+    color: black;
+}
+#header > ul > li.a { color: blue; 
+}
+​
+div#header > * {
+    margin: 10px;
+    border: 5px solid green;
+}
+div#header ~ article {
+    background-color: aqua;
+}
