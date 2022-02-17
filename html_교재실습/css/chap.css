@@ -7,10 +7,15 @@
 h1{
     width: 400px;
     border-top: 2px solid red;
+    /* 박스 높이를 50px로 */
+    line-height: 50px;
+    /* 가운데 정렬 */
+    text-align: center;
 }
 p{
     width: 400px;
     border-bottom: 4px dotted blue;
+    line-height: 50px;
 }
 a{
     border: 4px outset purple;
@@ -53,10 +58,12 @@ ul li{
     font-size: 40px;
 }
 ul li:nth-of-type(1){
+  /* monoton 글꼴 적용 */
     font-family: 'Monoton', cursive;
 }
 ul li:nth-of-type(2){
     font-family: "굴림";
+    color:rgb(73, 33, 167)
 }
 ul li:nth-of-type(3){
     font-family: serif;
