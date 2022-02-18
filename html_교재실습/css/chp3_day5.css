@@ -1,24 +1,43 @@
 .box1{
-    width:300px;
-    height: 300px;
+    width:200px;
+    height: 200px;
     background: blue;
     margin: 100px;
     float: left;
     border-radius: 30px;
 }
 .box2{
-    width:300px;
-    height: 300px;
+    width:200px;
+    height: 200px;
     background: red;
     margin: 100px;
     float: left;
-    box-shadow: 10px 10px 30px pink;
+    /* border-radius 50% = circle 
+    좌상 우상 우하 좌하*/
+    border-radius: 50%;
+}
+.box3{
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to left, blue, red);
+    margin: 100px;
+    float:  left;
+    border-radius: 30% 0% 30% 0%;
+}
+.box4{
+    width:200px;
+    height: 200px;
+    background: linear-gradient(45deg, blue, red);
+    margin: 100px;
+    float: left;
+    border-radius: 10% 20% 20% 50%;
 }
 p{
     font-weight: bold;
     font-size: 100px;
     font-family: "arial";
-    color: #111;
+    color: rgb(62, 29, 139);
     margin: 100px;
-    text-shadow: 30px 30px 10px aquamarine;
+    /* 가로 세로 폭(숫자가 높을수록 흐릿해짐) */
+    text-shadow: 30px 30px 20px aquamarine;
 }
