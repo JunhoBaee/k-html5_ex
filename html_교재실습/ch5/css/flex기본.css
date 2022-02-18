@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    background: rgb(156, 216, 235);
+}
+section{
+    border: 10px solid red;
+    /* 가로로 출력 
+    display: flex; */
+    /* 안에 내용물의 크기 만큼만 border 크기가 줄어들음 */
+    display: inline-flex;
+    /* 다시 세우기 column/column reverse */
+    /* flex-direction: column; */
+    /* 정렬방향 및 줄바꿈 모두 한줄에 표현 */
+    flex-wrap: nowrap;
+    
+}
+section article {
+    width: 100px;
+    height: 100px;
+    background: rgb(142, 129, 155);
+    border: 1px solid black;
+    margin: 5px;
+    /* 글자들만 가운데 정렬 text-align: center */
+    text-align: center ;
+    /* 사각형의 가운데로 이동 */
+    line-height: 100px;
+}
