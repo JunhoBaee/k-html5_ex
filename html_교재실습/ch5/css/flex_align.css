@@ -28,3 +28,22 @@ section article {
     /* 사각형의 가운데로 이동 */
     line-height: 100px;
 }
+h1{
+    background-color: rgba(178, 236, 178, 0.5);
+}
+/* overflow 부분은 hidden 시키기 한줄일 때 */
+div > p{
+    width: 300px;
+    background: aquamarine;
+
+    /* white-space: nowrap; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* hidden대상이 여러줄일 때 */
+    display: -webkit-box;
+    /* 라인 수 */
+    -webkit-line-clamp: 5; 
+    -webkit-box-orient: vertical;
+    /* 줄바꿈 */
+    word-wrap: break-word;
+}
