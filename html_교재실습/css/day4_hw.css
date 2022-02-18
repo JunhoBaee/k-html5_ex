@@ -70,11 +70,14 @@ section:nth-of-type(2) {
     width: 400px;
     height: 400px;
     background-color: lightblue;
+    float: left;
+    position: relative;
 }
 .wrap .right .box{
     width: 100px;
     height: 100px;
     background-color: red;
+    /* position: absolute => 화면에서 강제로 나와 설정한 좌표 값으로 배치 */
     position: absolute;
     right: 20px;
     bottom: 30px;
