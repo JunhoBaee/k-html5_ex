@@ -9,3 +9,20 @@ ul, ol{
 a{
     text-decoration: none;
 }
+/* 데코 시작 */
+header{
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+header .inner{
+    width: 1180px;
+    height: 120px;
+    margin: 0px auto;
+    /* 자식 absolute 요소의 기준점 설정 */
+    position: relative;
+}
+header .inner h1{
+    /* font 축약형 */
+    font: bold 24px/1 "arial";
+    color: #444;
+}
