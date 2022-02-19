@@ -23,7 +23,110 @@ header .inner{
 }
 header .inner h1{
     /* font 축약형
-    *24px/1 => line-height = 1 */
+    *24px/1 => line-height = 1
+    /1 은 바닥으로부터 떨어진 높이를 뜻함*/
     font: bold 24px/1 "arial";
     color: #444;
+}
+/* 우측으로 밀어넣기 */
+header .inner .util{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+/* 오른쪽 일자 정렬 */
+header .inner .util li{
+    float: left;
+}
+/* 색깔 입힌 후 일정한 간격 유지 */
+header .inner .util li a{
+    display: block;
+    font: 12px/1 "arial";
+    color: #999;
+    padding: 0px 10px;
+}
+/* 우측 정렬 및 초기화 
+메뉴1
+메뉴2
+메뉴3
+메뉴4*/
+header .inner #gnb{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+/* 일자 정렬 
+메뉴1메뉴2메뉴3메뉴4 */
+header .inner #gnb li{
+    float: left;
+}
+header .inner #gnb li a{
+    /* 인라인 요소는 block을 이용하여 크기 조절 가능 */
+    display: block;
+    font: bold 15px/1 "arial";
+    color: #555;
+    padding: 20px 40px;
+    transition: all 0.5s;   
+}
+/* 커서를 갖다 올려두면 인라인 배경색이 #555로 변함 */
+header .inner #gnb li a:hover{
+    background: #555;
+    color: #fff;
+}
+/* visual */
+figure{
+    width: 100%;
+    /* 전체 브라우저 높이에서 120px만큼 뺴줌 */
+    height: calc(100vh - 120px);
+    background: rgba(13, 167, 194, 0.144);
+    position: relative;
+    overflow: hidden;
+    padding-top: 250px;
+}
+figure video{
+    /* 영상을 figure 영역 안에 꽉 차도록 설정 */
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    /* 영상이 배경으로 되었으며 뿌옇게 됨 */
+    opacity: 0.3;
+    /* 영상이 잘리고 DJANGO 소개 뒷부분만 영상이 나옴 */
+    position: absolute;
+    /* 배경 영상이 위로 올라옴 */
+    top: 0px;
+    left: 0px;   
+}
+figure .inner{
+    width: 1180px;
+    margin: 0px auto;
+    position: relative;
+}
+/* DJANGO BACKEND PROGRAMMER 글씨 크기체 수정 */
+figure .inner h1{
+    font: normal 85px/1 "arial";
+    color: #fff;
+    background-color: rgba(127, 255, 212, 0.137);
+    margin-bottom: 20px;
+}
+/* 서울시 관악구 신원동 */
+figure .inner p{
+    font: 16px/1.4 "arial";
+    color: #888;
+    margin-bottom: 60px;
+}
+/* Click more */
+figure .inner a{
+    display: block;
+    width: 400px;
+    height: 30px;
+    border: 2px solid #bbb;
+    font: bold 20px/30px "arial";
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1px;
+    transition: all 0.5s;
+}
+figure .inner a:hover{
+    background: #fff;
+    color: #555;
 }
