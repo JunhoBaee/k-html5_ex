@@ -1,0 +1,16 @@
+{
+    "host": "cornsalad.dothome.co.kr",
+    "username": "cornsalad",
+    "password": "zmzm3354!",
+    "remotePath": "/html",
+    "protocol": "ftp",
+    "port": 21,
+    "fileNameEncoding": "utf8",
+    "autoUpload": true,
+    "autoDelete": false,
+    "autoDownload": false,
+    "ignore": [
+        ".git",
+        "/.vscode"
+    ]
+}
