@@ -1,10 +1,22 @@
-let result = 0
-for (let i = 1; i <= 100; i++){
-    result += i
+let result = ''
+
+for(let i = 1; i < 10; i ++){
+    for(let j = 10; j > i; j--){
+        result += ' '
+    }
+    for(let k = 0; k <  2* i -1; k++){
+        result += '*'
+    }
+    result += '\n'
 }
-console.log(`1~100까지의 합: ${result}`)
+console.log(result)
 
 
+// let result = 0
+// for (let i = 1; i <= 100; i++){
+//     result += i
+// }
+// console.log(`1~100까지의 합: ${result}`)
 
 
 
