@@ -1,18 +1,21 @@
-// if else문 중첩 조건문
+// 3항 연산자 짝수 홀수 판단
 
-<script>
-// 변수를 선언
-const input = Number(prompt('숫자를 입력하세요.', '숫자'))
-// 조건문
-switch (input % 2) {
-case 0:
-alert('짝수입니다.')
-break
-case 1:
-alert('홀수입니다.')
-break
-default:
-alert('숫자가 아닙니다.')
-break
-}
-</script>
+//변수 선언
+const input = prompt("숫자를 입력하세요.")
+const number = Number(input)
+
+// 3항 연산자 예시
+const result = (number % 2 == 0)  ? "짝수입니다" : "홀수입니다"
+alert (result)
+
+
+// if (num >= 0){
+//     console.log("0 이상의 숫자입니다.")
+// }
+// else{
+//     console.log("0 보다 작은 숫자입니다.")
+// }
+
+// alert()
+
+
