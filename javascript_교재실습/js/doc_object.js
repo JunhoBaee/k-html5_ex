@@ -1,12 +1,35 @@
-document.addEventListener('DOMContentLoaded', ()=> {
+//click Listener
+document.addEventListener("DOMContentLoaded", () => {
+    let counter = 0
+    const h1 = document.querySelector('h1')
 
-    const a = document.querySelector('#a')
-    const b = document.querySelector('#b')
-
-    a.textContent = '<h1>textContent 속성</h1>'
-    b.innerHTML = '<h1>innerHTML 속성</h1>'
-
+    h1.addEventListener('click', (event) => {
+        counter++
+        h1.textContent = `클릭 횟수: ${counter}`
+    })
 })
+
+
+// document.addEventListener(`DOMContentLoaded`, () => {
+//     const rects = document.querySelectorAll(`.rect`)
+
+//     rects.forEach((rect, index) => {
+//         const width = (index + 1) *100
+//         const src = `http://placekitten.com/${width}/300`
+//         rect.setAttribute(`src`, src)
+//     })
+// })
+
+
+// document.addEventListener('DOMContentLoaded', ()=> {
+
+//     const a = document.querySelector('#a')
+//     const b = document.querySelector('#b')
+
+//     a.textContent = '<h1>textContent 속성</h1>'
+//     b.innerHTML = '<h1>innerHTML 속성</h1>'
+
+// })
 
 
 // document.addEventListener('DOMContentLoaded', () =>{
