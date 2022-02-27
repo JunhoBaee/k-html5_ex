@@ -1,0 +1,13 @@
+[
+	{
+		"name": "localhost",
+		"host": "cornsalad.dothome.co.kr",
+		"port": 21,
+		"type": "ftp",
+		"username": "cornsalad",
+		"password": "zmzm3354!",
+		"path": "/",
+		"autosave": true,
+		"confirm": false
+	}
+]
