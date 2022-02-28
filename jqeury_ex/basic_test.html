@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery Basic</title>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-
+H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script>
+// 이벤트를 연결합니다.
+$(document).ready(function () {
+// 엘리먼트 추가
+for(let i=0; i<=3; i++)
+$('body').append('<img>');
+// css 설정
+$('img').css("margin", "5px")
+// 속성을 지정
+$('img').attr('alt', 'jQuery 라이브러리를 사용한 속성 지정');
+$('img').attr('src', 'https://picsum.photos/600/400');
+// $('img').attr('width', '100');
+});
+</script>
+</head>
+<body>
+</body>
+</html>
