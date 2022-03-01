@@ -180,6 +180,7 @@ section .inner .wrap article:last-child{
 /* 당근 설명 글씨 조금 내려감 */
 section .inner .wrap article h2{
     margin-bottom: 10px;
+    text-align: center;
 }
 /* 당근 사진 이름 */
 section .inner .wrap article h2 a{
@@ -192,9 +193,18 @@ section .inner .wrap article p{
     color: #777;
     text-align: left;
 }
-section .inner .wrap article .pic{
-    width: 100px;
-    height: 120px;
+section .inner .wrap article .pic:nth-of-type(1){
+    width: 300px;
+    height: 180px;
+    background: #333;
+    margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+}
+/* !!! 두번째 inner */
+section .inner .wrap article .pic :nth-of-type(2){
+    width: 150px;
+    height: 180px;
     background: #333;
     margin-bottom: 15px;
     position: relative;
