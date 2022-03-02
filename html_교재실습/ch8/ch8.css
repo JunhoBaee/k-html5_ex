@@ -193,7 +193,7 @@ section .inner .wrap article p{
     color: #777;
     text-align: left;
 }
-section .inner .wrap article .pic:nth-of-type(1){
+section .inner .wrap article .pic img:nth-of-type(1){
     width: 300px;
     height: 180px;
     background: #333;
@@ -202,9 +202,9 @@ section .inner .wrap article .pic:nth-of-type(1){
     overflow: hidden;
 }
 /* !!! 두번째 inner */
-section .inner .wrap article .pic :nth-of-type(2){
-    width: 150px;
-    height: 180px;
+section .inner .wrap article .pic img:nth-of-type(2){
+    width: 200px;
+    height: 140px;
     background: #333;
     margin-bottom: 15px;
     position: relative;
@@ -245,7 +245,7 @@ footer .inner{
 /* 맨 아래 얇은 줄 */
 footer .inner .upper{
     width: 100%;
-    border-bottom: 1px solid rgba(44, 210, 216, 0.336);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.336);
     padding-bottom: 20px;
 }
 /* 상단 영역 float 해제 */
