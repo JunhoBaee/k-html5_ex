@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> Ajax </title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+  $(function() {
+    $(".btn1").click(function(){
+      $(this).hide()
+      $("#newsWrap_1")
+      .load("jquery_ajax_news.html #news_1");
+    })
+    $(".btn2").click(function(){
+      $(this).hide()
+      $("#newsWrap_2")
+      .load("jquery_ajax_news.html #news_2");
+    })
+  });
+</script>
+</head>
+<body>
+  
+  <h1>LOAD 1</h1>
+  <button class="btn1">newsLoad1</button> 
+  <div id="newsWrap_1"></div>
+  <br>
+  
+  <h1>LOAD 2</h1>   
+  <button class="btn2">newsLoad2</button> 
+  <div id="newsWrap_2"></div>
+</body>
+</html>
