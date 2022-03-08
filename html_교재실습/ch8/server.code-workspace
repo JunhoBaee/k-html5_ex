@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../../Downloads/13_base"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "k-html5_ex"
+	}
+}
